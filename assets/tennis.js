@@ -43,7 +43,7 @@
         results.forEach(m => el("li", m.player1 + " vs " + m.player2 +
           (m.score ? " — " + m.score : "") + " (" + (m.tournament || "Tennis") + ")", list));
       }
-      el("h4", "Rankings (provider snapshot)");
+      el("h4", "Rankings");
       const ranks = (tour.rankings || []).slice(0, 10);
       if (!ranks.length) el("p", "Rankings not available yet.");
       else {
