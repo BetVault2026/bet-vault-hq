@@ -1,1 +1,288 @@
-{"updated_utc":null,"source":"OpenLigaDB","competition":"Premier League","matches":[]}
+{
+  "updated_utc": "2026-11-23 02:51",
+  "source": "OpenLigaDB",
+  "license": "ODbL-1.0",
+  "competition": "Premier League",
+  "matches": [
+    {
+      "kickoff_uk": "21 Nov 12:30",
+      "home": "Manchester City",
+      "away": "Fulham FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "21 Nov 15:00",
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "21 Nov 15:00",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "21 Nov 15:00",
+      "home": "Chelsea FC",
+      "away": "Leeds United",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "21 Nov 15:00",
+      "home": "Coventry City",
+      "away": "Crystal Palace FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "21 Nov 15:00",
+      "home": "Tottenham Hotspur FC",
+      "away": "Ipswich Town",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "21 Nov 17:30",
+      "home": "Newcastle United FC",
+      "away": "FC Arsenal",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "22 Nov 14:00",
+      "home": "Hull City",
+      "away": "Brighton & Hove Albion",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "22 Nov 16:30",
+      "home": "FC Liverpool",
+      "away": "Manchester United FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "23 Nov 20:00",
+      "home": "Brentford F.C.",
+      "away": "Everton FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "27 Nov 20:00",
+      "home": "Nottingham Forest",
+      "away": "Chelsea FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "28 Nov 15:00",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "28 Nov 15:00",
+      "home": "Manchester United FC",
+      "away": "Brentford F.C.",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "28 Nov 17:30",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "29 Nov 12:00",
+      "home": "Everton FC",
+      "away": "FC Liverpool",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "29 Nov 14:05",
+      "home": "Brighton & Hove Albion",
+      "away": "Newcastle United FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "29 Nov 14:05",
+      "home": "Crystal Palace FC",
+      "away": "Hull City",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "29 Nov 14:05",
+      "home": "Fulham FC",
+      "away": "AFC Bournemouth",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "29 Nov 14:05",
+      "home": "Sunderland",
+      "away": "Tottenham Hotspur FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "29 Nov 16:30",
+      "home": "FC Arsenal",
+      "away": "Manchester City",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "01 Dec 20:00",
+      "home": "Coventry City",
+      "away": "Ipswich Town",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 19:30",
+      "home": "Chelsea FC",
+      "away": "Crystal Palace FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 19:30",
+      "home": "Hull City",
+      "away": "Nottingham Forest",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 19:30",
+      "home": "FC Liverpool",
+      "away": "Sunderland",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 19:30",
+      "home": "Manchester City",
+      "away": "Leeds United",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 20:15",
+      "home": "AFC Bournemouth",
+      "away": "Brighton & Hove Albion",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 20:15",
+      "home": "Aston Villa",
+      "away": "Everton FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 20:15",
+      "home": "Brentford F.C.",
+      "away": "FC Arsenal",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "02 Dec 20:15",
+      "home": "Newcastle United FC",
+      "away": "Manchester United FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "03 Dec 20:00",
+      "home": "Tottenham Hotspur FC",
+      "away": "Fulham FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 12:30",
+      "home": "Chelsea FC",
+      "away": "FC Liverpool",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 15:00",
+      "home": "AFC Bournemouth",
+      "away": "Hull City",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 15:00",
+      "home": "Aston Villa",
+      "away": "Crystal Palace FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 15:00",
+      "home": "Leeds United",
+      "away": "Ipswich Town",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 15:00",
+      "home": "Manchester United FC",
+      "away": "Coventry City",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 17:30",
+      "home": "Nottingham Forest",
+      "away": "Brighton & Hove Albion",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "05 Dec 20:00",
+      "home": "Brentford F.C.",
+      "away": "Manchester City",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "06 Dec 14:00",
+      "home": "Everton FC",
+      "away": "Fulham FC",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "06 Dec 14:00",
+      "home": "Newcastle United FC",
+      "away": "Sunderland",
+      "score": null,
+      "status": "Scheduled / in progress"
+    },
+    {
+      "kickoff_uk": "06 Dec 16:30",
+      "home": "Tottenham Hotspur FC",
+      "away": "FC Arsenal",
+      "score": null,
+      "status": "Scheduled / in progress"
+    }
+  ]
+}
