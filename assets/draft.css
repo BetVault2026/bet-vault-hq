@@ -55,3 +55,6 @@
 
 /* Center the contribution message and enlarge the gold heart. */
 .support-page main .support-contribution{text-align:center;padding:20px 16px}.support-page .support-contribution .contribution-heading{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;margin-bottom:12px}.support-page .support-contribution .support-heart{font-size:76px;line-height:1;color:#ffce36;margin:0 auto}.support-page main .support-contribution>p{text-align:center;margin:10px auto;max-width:720px}.support-page .support-contribution .gold-btn{margin:12px auto 0}
+
+/* Remove excess space above the contribution heart. */
+.support-page main .support-contribution{padding-top:4px}.support-page main .support-contribution>.contribution-heading{margin-top:0;gap:4px}.support-page .support-contribution .support-heart{margin:0 auto;line-height:.85}.national-flag{width:28px;height:20px;object-fit:contain;vertical-align:middle;margin-right:7px;display:inline-block}.sport-team.winner{color:#ffce36}
