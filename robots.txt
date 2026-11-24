@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://bet-vault-hq.pages.dev/sitemap.xml
+Sitemap: https://www.betvaulthq.co.uk/sitemap.xml
