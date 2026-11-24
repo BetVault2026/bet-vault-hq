@@ -12,9 +12,9 @@ PAGES AND DATA
 - Sports feeds can be incomplete or delayed. Verify data source terms and attribution before commercial use.
 
 DEPLOYMENT
-- No Cloudflare Pages deployment workflow is present in this repository.
-- Earlier setup notes referred to Netlify, not Cloudflare. Confirm the actual hosting provider and connected project in its dashboard before assuming a push deploys the public site.
-- Do not claim publication until a successful production deployment and public URL check are recorded.
+- Hosting provider confirmed by the owner: Cloudflare.
+- This repository has no Cloudflare deployment workflow file. Cloudflare Pages may deploy automatically if its Git integration is connected to this repository's main branch, but that connection and a production deployment have not been verified from the available GitHub access.
+- Do not claim publication until the Cloudflare Pages project shows a successful production deployment and its public URL is checked.
 
 BEFORE COMMERCIAL LAUNCH
 - Complete and verify the publisher identity and contact details in the legal pages.
