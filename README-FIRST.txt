@@ -1,12 +1,28 @@
-BET VAULT HQ — REDESIGNED WEBSITE
+BET VAULT HQ — CURRENT REPOSITORY NOTES
 
-1. Extract this ZIP. Upload the CONTENTS (not the ZIP) to your GitHub repository BetVault2026/bet-vault-hq. index.html should be at the repository root.
-2. Important: the hidden .github/workflows/football.yml folder is needed for scheduled updates. GitHub web uploads sometimes skip hidden folders. Check it appears in the repository.
-3. Connect GitHub to Netlify using Import from Git, then choose this repository. This is a static website; no build command is required.
-4. Go to GitHub Actions and manually run Refresh football data once. It will then be scheduled four times per day. It may be delayed, or the community feed may lack matches. No guarantee of live coverage.
-5. Football: OpenLigaDB Premier League data, ODbL 1.0 attribution. Check its API and community coverage; scores can be incomplete or delayed. This website does not currently show other UK leagues.
-6. Boxing and tennis: redesigned pages include official source links but DO NOT have automatic match feeds yet. Do not claim they update automatically. Commercial reuse permission must be confirmed before integrating any provider.
-7. Guides and Tools are combined; Offers and Reviews are combined with Bookmakers; About and Contact are combined. Horse racing is removed.
-8. Contact email button opens the visitor’s email app. The address is not printed visibly, but it is still present in the HTML link target and therefore not secret.
-9. Before commercial launch: add real publisher identity, verify operators on the UKGC register, obtain affiliate programme approvals, verify all offer terms, and tailor privacy/cookies/terms to actual data practices.
-10. If you use a shared computer, sign out of GitHub after uploading and do not save your password.
+Repository: BetVault2026/bet-vault-hq
+Default branch: main
+Site type: static HTML, CSS and JavaScript. There is no build command.
+
+PAGES AND DATA
+- Homepage, bookmaker directory, football, boxing, tennis, guides, about/contact and legal pages are in the repository root.
+- Football data refresh: Monday 06:05 UTC. Current GitHub Actions run succeeded on 23 November 2026.
+- Boxing data refresh: Wednesday 06:25 UTC. Latest observed run succeeded on 23 November 2026.
+- Tennis data refresh: Friday 11:15 UTC. The API fetch step succeeded on 23 November 2026, but the cache commit failed because the workflow pushed without first rebasing against main. The workflow has now been corrected to pull --rebase before pushing.
+- Sports feeds can be incomplete or delayed. Verify data source terms and attribution before commercial use.
+
+DEPLOYMENT
+- No Cloudflare Pages deployment workflow is present in this repository.
+- Earlier setup notes referred to Netlify, not Cloudflare. Confirm the actual hosting provider and connected project in its dashboard before assuming a push deploys the public site.
+- Do not claim publication until a successful production deployment and public URL check are recorded.
+
+BEFORE COMMERCIAL LAUNCH
+- Complete and verify the publisher identity and contact details in the legal pages.
+- Tailor privacy and cookie notices to the real form, email, hosting, analytics and payment processing configuration.
+- Verify each bookmaker against the UK Gambling Commission public register and operator terms; do not invent ratings, current offers or affiliate relationships.
+- Confirm permission/licensing for commercial reuse of third-party sports data.
+- Complete a live test of membership submissions and Stripe payment links.
+- Obtain appropriate review of gambling advertising, affiliate disclosures and applicable UK legal obligations.
+
+CONTACT
+Public contact email currently configured: betvault2026@protonmail.com
