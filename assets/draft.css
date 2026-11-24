@@ -1,0 +1,54 @@
+ .sports-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.sports-home>.wrap{width:100%;max-width:none;padding:0}.sport-tile{min-height:0;padding:18px}.sport-title{display:flex;align-items:center;gap:10px}.socials a{border:1px solid #d6a83f;border-radius:24px;padding:8px 14px;color:#d6a83f}#member label{display:block;margin:12px 0}#member input:not([type=checkbox]),#member textarea{display:block;width:100%;padding:10px;background:#15191d;color:white;border:1px solid #68552d}button:disabled{opacity:.6;cursor:not-allowed}@media(max-width:700px){.sports-grid{grid-template-columns:1fr}}
+.winner{color:#D6A83F} .detail-panel{margin-bottom:14px} dt{color:#D6A83F;margin-top:12px} dd{margin-left:0} :focus-visible{outline:2px solid #ffe48a;outline-offset:3px}
+/* Support page only: compact cards and aligned contribution section. */
+.support-page main .detail-panel{padding:14px 18px;margin:0;min-height:0}
+.support-page main .detail-panel h2{margin:0 0 6px;font-size:24px;line-height:1.15}
+.support-page main .detail-panel p{margin:5px 0;line-height:1.45}
+.support-page main .section>.wrap{display:grid;gap:12px}
+.support-page .support-benefits{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.support-page .support-benefits .detail-panel{padding:12px 15px}
+.support-page .support-benefits h2{font-size:21px}
+.support-page .support-contribution{text-align:center}
+.support-page .support-heart{color:#D6A83F;font-size:48px;line-height:1;margin:0 auto 8px}
+.support-page .support-contribution p{max-width:720px;margin:5px auto}
+.support-page .support-contribution .gold-btn{margin:10px auto;max-width:100%;width:auto;white-space:normal}
+@media(max-width:760px){.support-page .support-benefits{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.support-page .support-benefits{grid-template-columns:1fr}.support-page main .detail-panel{padding:12px 14px}}
+
+/* Compact first-screen support layout; normal scrolling on small screens. */
+.support-page .page-banner{padding:12px 0 10px}
+.support-page .page-banner h1{font-size:clamp(30px,4vw,44px);margin:3px 0 0}
+.support-page main .section{padding:10px 0}
+.support-page main .section>.wrap{gap:8px}
+.support-page main .detail-panel{padding:9px 14px}
+.support-page main .detail-panel h2{font-size:22px;margin:0 0 3px}
+.support-page main .detail-panel p{margin:3px 0;line-height:1.35}
+.support-page .support-benefits{gap:7px}
+.support-page .support-benefits .detail-panel{padding:8px 12px}
+.support-page .support-benefits h2{font-size:19px}
+.support-page .support-contribution .support-heart{font-size:32px;margin:0;line-height:1}
+.support-page .contribution-heading{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:3px}
+.support-page .contribution-heading h2{margin:0!important}
+.support-page .support-contribution p{margin:3px auto;max-width:100%}
+.support-page .support-contribution .gold-btn{margin:7px auto 2px;opacity:1}
+.support-page .support-contribution .support-fine{font-size:12px}
+.support-page footer{margin-top:10px}
+@media(max-width:760px){.support-page .page-banner{padding:16px 0}.support-page .support-benefits .detail-panel{padding:10px 12px}}
+
+.operator-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 20px}.operator-card{text-align:center;margin:0;padding:16px}.operator-name{color:#d6a83f;font-size:24px;font-weight:800;padding:12px 0}.operator-card .gold-btn{margin-top:8px}@media(max-width:800px){.operator-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.operator-grid{grid-template-columns:1fr}}
+
+.support-page main .support-intro > p,
+.support-page main .support-contribution > p {font-family:inherit;font-size:16px;font-weight:400;color:inherit;line-height:1.35;text-align:center;margin:3px auto;}
+
+.support-page main .support-intro > h2 {text-align:center;}
+
+.skip-link{position:absolute;left:12px;top:12px;z-index:9999;padding:12px 18px;background:#ffe48a;color:#030708;font-weight:700;transform:translateY(-200%)}.skip-link:focus{transform:none;color:#030708}
+
+/* Support page heading spacing */
+.support-page main .support-intro > h2 { margin-bottom: 16px; }
+.support-page main .support-contribution > .contribution-heading { margin-bottom: 16px; }
+
+/* Membership form spacing and compact support cards */
+#member{display:grid;gap:14px;margin-top:18px;max-width:680px}#member label{margin:0;line-height:1.5}#member input:not([type=checkbox]):not([type=hidden]),#member textarea{margin-top:6px;border-radius:6px;font:inherit}#member textarea{min-height:90px;resize:vertical}#member input[type=checkbox]{margin:0 7px 0 0;vertical-align:middle}#member .gold-btn{justify-self:start;max-width:100%;white-space:normal}#member p{margin:0}#member input[type=hidden]{display:none}
+.support-page .support-benefits{display:grid;gap:8px;grid-template-columns:repeat(3,minmax(0,1fr))}.support-page main .support-benefits .detail-panel{padding:10px 12px;margin:0;min-height:0}.support-page main .support-benefits h2{font-size:20px;margin:0 0 4px}.support-page main .support-benefits p{margin:0;line-height:1.4}.support-page main .support-intro>h2,.support-page main .support-contribution>.contribution-heading{margin-bottom:6px}@media(max-width:760px){.support-page .support-benefits{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.support-page .support-benefits{grid-template-columns:1fr}}
+.operator-name img{margin-inline:auto;object-position:center!important}
