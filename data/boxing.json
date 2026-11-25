@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-23T03:49:27.284707+00:00",
+  "updated_utc": "2026-11-25T07:50:56.574899+00:00",
   "source": "https://openboxing.org/api",
   "coverage": "World-title boxing only",
   "upcoming": [
@@ -151,12 +151,12 @@
     },
     {
       "date": "2026-10-31",
-      "boxer_a": "Rafael Espinoza",
-      "boxer_b": "Ricardo Blandon",
+      "boxer_a": "Canelo Alvarez",
+      "boxer_b": "Christian M'billi",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "TKO",
-      "weight": "Featherweight"
+      "method": "UD",
+      "weight": "Super Middleweight"
     },
     {
       "date": "2026-10-31",
@@ -169,21 +169,12 @@
     },
     {
       "date": "2026-10-31",
-      "boxer_a": "Canelo Alvarez",
-      "boxer_b": "Christian M'billi",
+      "boxer_a": "Rafael Espinoza",
+      "boxer_b": "Ricardo Blandon",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "UD",
-      "weight": "Super Middleweight"
-    },
-    {
-      "date": "2026-10-24",
-      "boxer_a": "O'Shaquie Foster",
-      "boxer_b": "Emanuel Navarrete",
-      "status": "FINISHED",
-      "winner": "BOXER A",
-      "method": "UD",
-      "weight": "Super Featherweight"
+      "method": "TKO",
+      "weight": "Featherweight"
     },
     {
       "date": "2026-10-24",
@@ -195,13 +186,13 @@
       "weight": "Super Lightweight"
     },
     {
-      "date": "2026-10-17",
-      "boxer_a": "Sebastian Fundora",
-      "boxer_b": "Ermal Hadribeaj",
+      "date": "2026-10-24",
+      "boxer_a": "O'Shaquie Foster",
+      "boxer_b": "Emanuel Navarrete",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "KO",
-      "weight": "Super Welterweight"
+      "method": "UD",
+      "weight": "Super Featherweight"
     },
     {
       "date": "2026-10-17",
@@ -213,13 +204,13 @@
       "weight": "Heavyweight"
     },
     {
-      "date": "2026-10-10",
-      "boxer_a": "Sergio Mendoza",
-      "boxer_b": "Ricardo Sandoval",
+      "date": "2026-10-17",
+      "boxer_a": "Sebastian Fundora",
+      "boxer_b": "Ermal Hadribeaj",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "TKO",
-      "weight": "Flyweight"
+      "method": "KO",
+      "weight": "Super Welterweight"
     },
     {
       "date": "2026-10-10",
@@ -229,6 +220,15 @@
       "winner": "BOXER A",
       "method": "UD",
       "weight": "Lightweight"
+    },
+    {
+      "date": "2026-10-10",
+      "boxer_a": "Sergio Mendoza",
+      "boxer_b": "Ricardo Sandoval",
+      "status": "FINISHED",
+      "winner": "BOXER A",
+      "method": "TKO",
+      "weight": "Flyweight"
     },
     {
       "date": "2026-10-08",
@@ -241,21 +241,21 @@
     },
     {
       "date": "2026-09-27",
-      "boxer_a": "Takuma Inoue",
-      "boxer_b": "Tenshin Nasukawa",
-      "status": "FINISHED",
-      "winner": "BOXER A",
-      "method": "UD",
-      "weight": "Bantamweight"
-    },
-    {
-      "date": "2026-09-27",
       "boxer_a": "Ricardo Malajika",
       "boxer_b": "Tomoya Tsuboi",
       "status": "FINISHED",
       "winner": "BOXER A",
       "method": "SD",
       "weight": "Super Flyweight"
+    },
+    {
+      "date": "2026-09-27",
+      "boxer_a": "Takuma Inoue",
+      "boxer_b": "Tenshin Nasukawa",
+      "status": "FINISHED",
+      "winner": "BOXER A",
+      "method": "UD",
+      "weight": "Bantamweight"
     },
     {
       "date": "2026-09-26",
@@ -268,15 +268,6 @@
     },
     {
       "date": "2026-09-12",
-      "boxer_a": "Ryan Garcia",
-      "boxer_b": "Conor Benn",
-      "status": "FINISHED",
-      "winner": "BOXER A",
-      "method": "TKO",
-      "weight": "Welterweight"
-    },
-    {
-      "date": "2026-09-12",
       "boxer_a": "Jai Opetaia",
       "boxer_b": "Noel Mikaelian",
       "status": "FINISHED",
@@ -285,13 +276,13 @@
       "weight": "Cruiserweight"
     },
     {
-      "date": "2026-09-02",
-      "boxer_a": "Takeshi Ishii",
-      "boxer_b": "Wilfredo Mendez",
+      "date": "2026-09-12",
+      "boxer_a": "Ryan Garcia",
+      "boxer_b": "Conor Benn",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "KO",
-      "weight": "Minimumweight"
+      "method": "TKO",
+      "weight": "Welterweight"
     },
     {
       "date": "2026-09-02",
@@ -301,6 +292,15 @@
       "winner": "BOXER A",
       "method": "TKO",
       "weight": "Light Flyweight"
+    },
+    {
+      "date": "2026-09-02",
+      "boxer_a": "Takeshi Ishii",
+      "boxer_b": "Wilfredo Mendez",
+      "status": "FINISHED",
+      "winner": "BOXER A",
+      "method": "KO",
+      "weight": "Minimumweight"
     },
     {
       "date": "2026-08-29",
@@ -331,15 +331,6 @@
     },
     {
       "date": "2026-08-01",
-      "boxer_a": "William Zepeda",
-      "boxer_b": "Lamont Roach Jr",
-      "status": "FINISHED",
-      "winner": "BOXER A",
-      "method": "UD",
-      "weight": "Lightweight"
-    },
-    {
-      "date": "2026-08-01",
       "boxer_a": "Raymond Muratalla",
       "boxer_b": "Robson Conceicao",
       "status": "FINISHED",
@@ -348,13 +339,13 @@
       "weight": "Lightweight"
     },
     {
-      "date": "2026-07-25",
-      "boxer_a": "Josh Kelly",
-      "boxer_b": "Caoimhin Agyarko",
+      "date": "2026-08-01",
+      "boxer_a": "William Zepeda",
+      "boxer_b": "Lamont Roach Jr",
       "status": "FINISHED",
       "winner": "BOXER A",
       "method": "UD",
-      "weight": "Super Welterweight"
+      "weight": "Lightweight"
     },
     {
       "date": "2026-07-25",
@@ -366,13 +357,22 @@
       "weight": "Super Middleweight"
     },
     {
-      "date": "2026-07-20",
-      "boxer_a": "Shokichi Iwata",
-      "boxer_b": "Erik Badillo",
+      "date": "2026-07-25",
+      "boxer_a": "Josh Kelly",
+      "boxer_b": "Caoimhin Agyarko",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "TKO",
-      "weight": "Light Flyweight"
+      "method": "UD",
+      "weight": "Super Welterweight"
+    },
+    {
+      "date": "2026-07-20",
+      "boxer_a": "Kenshiro Teraji",
+      "boxer_b": "Israel Gonzalez",
+      "status": "FINISHED",
+      "winner": "BOXER A",
+      "method": "UD",
+      "weight": "Super Flyweight"
     },
     {
       "date": "2026-07-20",
@@ -385,12 +385,12 @@
     },
     {
       "date": "2026-07-20",
-      "boxer_a": "Kenshiro Teraji",
-      "boxer_b": "Israel Gonzalez",
+      "boxer_a": "Shokichi Iwata",
+      "boxer_b": "Erik Badillo",
       "status": "FINISHED",
       "winner": "BOXER A",
-      "method": "UD",
-      "weight": "Super Flyweight"
+      "method": "TKO",
+      "weight": "Light Flyweight"
     },
     {
       "date": "2026-07-11",
