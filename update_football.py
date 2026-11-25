@@ -26,7 +26,7 @@ try:
   if ts.tzinfo is None:ts=ts.replace(tzinfo=datetime.timezone.utc)
   if not now-datetime.timedelta(days=7)<=ts<=now+datetime.timedelta(days=14):continue
   home=(m.get('team1') or {}).get('teamName','TBC');away=(m.get('team2') or {}).get('teamName','TBC')
-  results=m.get('matchResults') or [];final=next((x for x in results if x.get('resultTypeID')==2),None)
+  results=m.get('matchResults') or [];final=next((x for x in results if str(x.get('resultTypeID'))=='2'),None)
   score=f"{final.get('pointsTeam1')}–{final.get('pointsTeam2')}" if m.get('matchIsFinished') and final and all(type(final.get(p)) is int and final[p]>=0 for p in ('pointsTeam1','pointsTeam2')) else None
   local=ts.astimezone(__import__('zoneinfo').ZoneInfo('Europe/London')).strftime('%d %b %H:%M')
   old=prior_matches.get((local,home,away),{})
@@ -43,6 +43,9 @@ try:
   rows.append((ts,item))
  rows.sort(key=lambda x:x[0])
  output={'updated_utc':now.strftime('%Y-%m-%d %H:%M'),'source':'OpenLigaDB','license':'ODbL-1.0','competition':'Premier League','matches':[m for _,m in rows]}
+ if any(m.get('score_source') not in (None,'OpenLigaDB') for _,m in rows):
+  for field in ('results_verified_date','results_verification_sources'):
+   if field in previous:output[field]=previous[field]
  # Surface upstream gaps in GitHub Actions instead of silently treating them as current results.
  missing=sum(1 for ts,m in rows if ts<now-datetime.timedelta(hours=6) and not m['score'])
  if missing:print(f'::warning::OpenLigaDB has {missing} past fixtures without confirmed final scores',file=sys.stderr)
@@ -53,7 +56,7 @@ try:
   if not h or not a: continue
   for name in (h,a): table.setdefault(name,dict(team=name,played=0,won=0,drawn=0,lost=0,gf=0,ga=0,points=0,form=[]))
   if not m.get('matchIsFinished'): continue
-  f=next((r for r in m.get('matchResults',[]) if r.get('resultTypeID')==2),None)
+  f=next((r for r in m.get('matchResults',[]) if str(r.get('resultTypeID'))=='2'),None)
   if not f or not isinstance(f.get('pointsTeam1'),int) or not isinstance(f.get('pointsTeam2'),int): continue
   completed.append((m.get('matchDateTimeUTC') or m.get('matchDateTime') or '',h,a,f['pointsTeam1'],f['pointsTeam2']))
  for _,h,a,g1,g2 in sorted(completed):
