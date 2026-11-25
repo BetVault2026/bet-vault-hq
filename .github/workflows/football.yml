@@ -21,6 +21,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check Python updater syntax
+        run: python -m py_compile update_football.py
       - name: Fetch football data
         run: python update_football.py
       - name: Save updated fixtures
