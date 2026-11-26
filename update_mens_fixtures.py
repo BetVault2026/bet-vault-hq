@@ -48,13 +48,13 @@ def main():
     budget["daily_reserved"] = 9
     if budget.get("month") != month:
         budget.update(month=month, history_reserved=0)
-    history_due = now.day in (1, 8, 15, 22, 26) and budget["history_reserved"] + 3 <= 15
+    history_due = now.day in (1, 12, 23, 26) and budget["history_reserved"] + 3 <= 9
     if history_due:
         budget["history_reserved"] += 3
     save()
     def fetch(tour, status, offset=0):
         query = urlencode({"status": status, "tour": tour,
-                           "draw": "singles", "limit": 200, "offset": offset,
+                           "gender": "women" if tour == "wta" else "men", "draw": "singles", "limit": 200, "offset": offset,
                            "from": (now - timedelta(days=7) if status == "completed" else now).date().isoformat(),
                            "to": (now + timedelta(days=7) if status == "upcoming" else now).date().isoformat()})
         request = Request("https://api.livetennisapi.com/api/public/v1/matches?" + query,
