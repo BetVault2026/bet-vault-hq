@@ -1,90 +1,91 @@
 {
-  "updated_utc": "2026-11-23 07:35",
+  "updated_utc": "2026-11-26 02:24",
   "source": "OpenLigaDB",
   "license": "ODbL-1.0",
   "competition": "Premier League",
   "matches": [
     {
+      "kickoff_utc": "2026-11-21T12:30:00+00:00",
       "kickoff_uk": "21 Nov 12:30",
       "home": "Manchester City",
       "away": "Fulham FC",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T12:30:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-21T15:00:00+00:00",
       "kickoff_uk": "21 Nov 15:00",
       "home": "AFC Bournemouth",
       "away": "Nottingham Forest",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T15:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-21T15:00:00+00:00",
       "kickoff_uk": "21 Nov 15:00",
       "home": "Aston Villa",
       "away": "Sunderland",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T15:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-21T15:00:00+00:00",
       "kickoff_uk": "21 Nov 15:00",
       "home": "Chelsea FC",
       "away": "Leeds United",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T15:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-21T15:00:00+00:00",
       "kickoff_uk": "21 Nov 15:00",
       "home": "Coventry City",
       "away": "Crystal Palace FC",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T15:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-21T15:00:00+00:00",
       "kickoff_uk": "21 Nov 15:00",
       "home": "Tottenham Hotspur FC",
       "away": "Ipswich Town",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T15:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-21T17:30:00+00:00",
       "kickoff_uk": "21 Nov 17:30",
       "home": "Newcastle United FC",
       "away": "FC Arsenal",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-21T17:30:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-22T14:00:00+00:00",
       "kickoff_uk": "22 Nov 14:00",
       "home": "Hull City",
       "away": "Brighton & Hove Albion",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-22T14:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-22T16:30:00+00:00",
       "kickoff_uk": "22 Nov 16:30",
       "home": "FC Liverpool",
       "away": "Manchester United FC",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-22T16:30:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-23T20:00:00+00:00",
       "kickoff_uk": "23 Nov 20:00",
       "home": "Brentford F.C.",
       "away": "Everton FC",
       "score": null,
-      "status": "Scheduled / in progress",
-      "kickoff_utc": "2026-11-23T20:00:00.000Z"
+      "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
       "kickoff_uk": "27 Nov 20:00",
       "home": "Nottingham Forest",
       "away": "Chelsea FC",
@@ -92,6 +93,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-28T15:00:00+00:00",
       "kickoff_uk": "28 Nov 15:00",
       "home": "Leeds United",
       "away": "Coventry City",
@@ -99,6 +101,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-28T15:00:00+00:00",
       "kickoff_uk": "28 Nov 15:00",
       "home": "Manchester United FC",
       "away": "Brentford F.C.",
@@ -106,6 +109,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-28T17:30:00+00:00",
       "kickoff_uk": "28 Nov 17:30",
       "home": "Ipswich Town",
       "away": "Aston Villa",
@@ -113,6 +117,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-29T12:00:00+00:00",
       "kickoff_uk": "29 Nov 12:00",
       "home": "Everton FC",
       "away": "FC Liverpool",
@@ -120,6 +125,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-29T14:05:00+00:00",
       "kickoff_uk": "29 Nov 14:05",
       "home": "Brighton & Hove Albion",
       "away": "Newcastle United FC",
@@ -127,6 +133,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-29T14:05:00+00:00",
       "kickoff_uk": "29 Nov 14:05",
       "home": "Crystal Palace FC",
       "away": "Hull City",
@@ -134,6 +141,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-29T14:05:00+00:00",
       "kickoff_uk": "29 Nov 14:05",
       "home": "Fulham FC",
       "away": "AFC Bournemouth",
@@ -141,6 +149,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-29T14:05:00+00:00",
       "kickoff_uk": "29 Nov 14:05",
       "home": "Sunderland",
       "away": "Tottenham Hotspur FC",
@@ -148,6 +157,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-11-29T16:30:00+00:00",
       "kickoff_uk": "29 Nov 16:30",
       "home": "FC Arsenal",
       "away": "Manchester City",
@@ -155,6 +165,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-01T20:00:00+00:00",
       "kickoff_uk": "01 Dec 20:00",
       "home": "Coventry City",
       "away": "Ipswich Town",
@@ -162,6 +173,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T19:30:00+00:00",
       "kickoff_uk": "02 Dec 19:30",
       "home": "Chelsea FC",
       "away": "Crystal Palace FC",
@@ -169,6 +181,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T19:30:00+00:00",
       "kickoff_uk": "02 Dec 19:30",
       "home": "Hull City",
       "away": "Nottingham Forest",
@@ -176,6 +189,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T19:30:00+00:00",
       "kickoff_uk": "02 Dec 19:30",
       "home": "FC Liverpool",
       "away": "Sunderland",
@@ -183,6 +197,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T19:30:00+00:00",
       "kickoff_uk": "02 Dec 19:30",
       "home": "Manchester City",
       "away": "Leeds United",
@@ -190,6 +205,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T20:15:00+00:00",
       "kickoff_uk": "02 Dec 20:15",
       "home": "AFC Bournemouth",
       "away": "Brighton & Hove Albion",
@@ -197,6 +213,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T20:15:00+00:00",
       "kickoff_uk": "02 Dec 20:15",
       "home": "Aston Villa",
       "away": "Everton FC",
@@ -204,6 +221,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T20:15:00+00:00",
       "kickoff_uk": "02 Dec 20:15",
       "home": "Brentford F.C.",
       "away": "FC Arsenal",
@@ -211,6 +229,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-02T20:15:00+00:00",
       "kickoff_uk": "02 Dec 20:15",
       "home": "Newcastle United FC",
       "away": "Manchester United FC",
@@ -218,6 +237,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-03T20:00:00+00:00",
       "kickoff_uk": "03 Dec 20:00",
       "home": "Tottenham Hotspur FC",
       "away": "Fulham FC",
@@ -225,6 +245,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T12:30:00+00:00",
       "kickoff_uk": "05 Dec 12:30",
       "home": "Chelsea FC",
       "away": "FC Liverpool",
@@ -232,6 +253,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T15:00:00+00:00",
       "kickoff_uk": "05 Dec 15:00",
       "home": "AFC Bournemouth",
       "away": "Hull City",
@@ -239,6 +261,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T15:00:00+00:00",
       "kickoff_uk": "05 Dec 15:00",
       "home": "Aston Villa",
       "away": "Crystal Palace FC",
@@ -246,6 +269,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T15:00:00+00:00",
       "kickoff_uk": "05 Dec 15:00",
       "home": "Leeds United",
       "away": "Ipswich Town",
@@ -253,6 +277,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T15:00:00+00:00",
       "kickoff_uk": "05 Dec 15:00",
       "home": "Manchester United FC",
       "away": "Coventry City",
@@ -260,6 +285,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T17:30:00+00:00",
       "kickoff_uk": "05 Dec 17:30",
       "home": "Nottingham Forest",
       "away": "Brighton & Hove Albion",
@@ -267,6 +293,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-05T20:00:00+00:00",
       "kickoff_uk": "05 Dec 20:00",
       "home": "Brentford F.C.",
       "away": "Manchester City",
@@ -274,6 +301,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-06T14:00:00+00:00",
       "kickoff_uk": "06 Dec 14:00",
       "home": "Everton FC",
       "away": "Fulham FC",
@@ -281,6 +309,7 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-06T14:00:00+00:00",
       "kickoff_uk": "06 Dec 14:00",
       "home": "Newcastle United FC",
       "away": "Sunderland",
@@ -288,11 +317,375 @@
       "status": "Scheduled / in progress"
     },
     {
+      "kickoff_utc": "2026-12-06T16:30:00+00:00",
       "kickoff_uk": "06 Dec 16:30",
       "home": "Tottenham Hotspur FC",
       "away": "FC Arsenal",
       "score": null,
       "status": "Scheduled / in progress"
     }
-  ]
+  ],
+  "standings": [
+    {
+      "team": "FC Arsenal",
+      "played": 10,
+      "won": 9,
+      "drawn": 0,
+      "lost": 1,
+      "gf": 15,
+      "ga": 5,
+      "points": 27,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "gd": 10
+    },
+    {
+      "team": "Brighton & Hove Albion",
+      "played": 10,
+      "won": 7,
+      "drawn": 1,
+      "lost": 2,
+      "gf": 26,
+      "ga": 7,
+      "points": 22,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "gd": 19
+    },
+    {
+      "team": "Manchester City",
+      "played": 10,
+      "won": 7,
+      "drawn": 0,
+      "lost": 3,
+      "gf": 21,
+      "ga": 13,
+      "points": 21,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "gd": 8
+    },
+    {
+      "team": "FC Liverpool",
+      "played": 10,
+      "won": 5,
+      "drawn": 3,
+      "lost": 2,
+      "gf": 14,
+      "ga": 10,
+      "points": 18,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "gd": 4
+    },
+    {
+      "team": "AFC Bournemouth",
+      "played": 10,
+      "won": 5,
+      "drawn": 2,
+      "lost": 3,
+      "gf": 16,
+      "ga": 13,
+      "points": 17,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "gd": 3
+    },
+    {
+      "team": "Chelsea FC",
+      "played": 10,
+      "won": 5,
+      "drawn": 1,
+      "lost": 4,
+      "gf": 19,
+      "ga": 16,
+      "points": 16,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "gd": 3
+    },
+    {
+      "team": "Everton FC",
+      "played": 10,
+      "won": 4,
+      "drawn": 4,
+      "lost": 2,
+      "gf": 12,
+      "ga": 10,
+      "points": 16,
+      "form": [
+        "D",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "gd": 2
+    },
+    {
+      "team": "Leeds United",
+      "played": 10,
+      "won": 3,
+      "drawn": 5,
+      "lost": 2,
+      "gf": 10,
+      "ga": 8,
+      "points": 14,
+      "form": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "W"
+      ],
+      "gd": 2
+    },
+    {
+      "team": "Brentford F.C.",
+      "played": 10,
+      "won": 3,
+      "drawn": 4,
+      "lost": 3,
+      "gf": 15,
+      "ga": 11,
+      "points": 13,
+      "form": [
+        "D",
+        "L",
+        "D",
+        "W",
+        "L"
+      ],
+      "gd": 4
+    },
+    {
+      "team": "Aston Villa",
+      "played": 10,
+      "won": 3,
+      "drawn": 4,
+      "lost": 3,
+      "gf": 14,
+      "ga": 17,
+      "points": 13,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "D",
+        "D"
+      ],
+      "gd": -3
+    },
+    {
+      "team": "Tottenham Hotspur FC",
+      "played": 10,
+      "won": 3,
+      "drawn": 3,
+      "lost": 4,
+      "gf": 10,
+      "ga": 11,
+      "points": 12,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "gd": -1
+    },
+    {
+      "team": "Newcastle United FC",
+      "played": 10,
+      "won": 3,
+      "drawn": 3,
+      "lost": 4,
+      "gf": 13,
+      "ga": 16,
+      "points": 12,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "D"
+      ],
+      "gd": -3
+    },
+    {
+      "team": "Hull City",
+      "played": 10,
+      "won": 2,
+      "drawn": 5,
+      "lost": 3,
+      "gf": 11,
+      "ga": 11,
+      "points": 11,
+      "form": [
+        "D",
+        "L",
+        "D",
+        "D",
+        "L"
+      ],
+      "gd": 0
+    },
+    {
+      "team": "Ipswich Town",
+      "played": 10,
+      "won": 3,
+      "drawn": 2,
+      "lost": 5,
+      "gf": 15,
+      "ga": 20,
+      "points": 11,
+      "form": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "L"
+      ],
+      "gd": -5
+    },
+    {
+      "team": "Fulham FC",
+      "played": 10,
+      "won": 2,
+      "drawn": 4,
+      "lost": 4,
+      "gf": 10,
+      "ga": 12,
+      "points": 10,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "D"
+      ],
+      "gd": -2
+    },
+    {
+      "team": "Nottingham Forest",
+      "played": 10,
+      "won": 2,
+      "drawn": 3,
+      "lost": 5,
+      "gf": 9,
+      "ga": 13,
+      "points": 9,
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "W"
+      ],
+      "gd": -4
+    },
+    {
+      "team": "Coventry City",
+      "played": 10,
+      "won": 3,
+      "drawn": 0,
+      "lost": 7,
+      "gf": 10,
+      "ga": 19,
+      "points": 9,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "gd": -9
+    },
+    {
+      "team": "Manchester United FC",
+      "played": 10,
+      "won": 1,
+      "drawn": 5,
+      "lost": 4,
+      "gf": 14,
+      "ga": 19,
+      "points": 8,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "D"
+      ],
+      "gd": -5
+    },
+    {
+      "team": "Sunderland",
+      "played": 10,
+      "won": 2,
+      "drawn": 2,
+      "lost": 6,
+      "gf": 8,
+      "ga": 17,
+      "points": 8,
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "W"
+      ],
+      "gd": -9
+    },
+    {
+      "team": "Crystal Palace FC",
+      "played": 10,
+      "won": 2,
+      "drawn": 1,
+      "lost": 7,
+      "gf": 10,
+      "ga": 24,
+      "points": 7,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "gd": -14
+    }
+  ],
+  "season": 2026
 }
