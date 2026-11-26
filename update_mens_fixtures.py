@@ -40,17 +40,15 @@ def main():
         raise SystemExit("LIVE_TENNIS_API_KEY missing")
     budget = data.setdefault("live_budget", {})
     def save():
-        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\\n")
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     if budget.get("day") == day:
         print("Daily allocation already reserved; no repeat requests")
         return
     budget["day"] = day
-    budget["daily_reserved"] = 9
+    budget["daily_reserved"] = 6
     if budget.get("month") != month:
         budget.update(month=month, history_reserved=0)
-    history_due = now.day in (1, 12, 23, 26) and budget["history_reserved"] + 3 <= 9
-    if history_due:
-        budget["history_reserved"] += 3
+    # Historical access returned HTTP 403; do not request it.
     save()
     def fetch(tour, status, offset=0):
         query = urlencode({"status": status, "tour": tour,
@@ -76,21 +74,13 @@ def main():
                 if len(rows) < 200:
                     break
         bucket = data[label]
-        bucket["live_upcoming"] = sorted(fixtures.values(), key=lambda m: m["starts_at"])[:200]
-        bucket["live_fixture_updated_utc"] = now.isoformat()
+        if fixtures:
+            bucket["live_upcoming"] = sorted(fixtures.values(), key=lambda m: m["starts_at"])[:200]
+            bucket["live_fixture_updated_utc"] = now.isoformat()
+        else:
+            print("No upcoming matches returned for", label, "- retaining fallback")
         save()
-    if history_due:
-        for tour in ("atp", "challenger", "wta"):
-            rows = fetch(tour, "completed")
-            # Preserve raw confirmed provider results until score schema is validated.
-            label = "wta" if tour == "wta" else "atp"
-            bucket = data[label]
-            bucket.setdefault("history_samples", {})[tour] = [
-                {k: row.get(k) for k in ("id", "status", "event_status", "score", "winner", "players", "scheduled_time", "tournament", "round_code", "tour", "gender", "draw")}
-                for row in rows if row.get("status") == "completed"
-            ][:3]
-            save()
-    print("Fixture refresh complete; historical sample validation required.")
+    print("Fixture refresh complete; restricted history disabled.")
 
 if __name__ == "__main__":
     main()
