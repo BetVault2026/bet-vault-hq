@@ -9,9 +9,6 @@ previous={}
 if target.exists():
  try: previous=json.loads(target.read_text())
  except (ValueError,OSError): previous={}
-prior_matches={(m.get('kickoff_uk'),m.get('home'),m.get('away')):m
- for m in previous.get('matches',[]) if isinstance(m,dict) and m.get('score')
- and m.get('status')=='Finished'}
 req=urllib.request.Request(base+str(season),headers={'User-Agent':'BetVaultHQ/1.0 (static sports information project; see site contact page)','Accept':'application/json'})
 try:
  with urllib.request.urlopen(req,timeout=25) as res: raw=json.load(res)
@@ -29,23 +26,12 @@ try:
   results=m.get('matchResults') or [];final=next((x for x in results if str(x.get('resultTypeID'))=='2'),None)
   score=f"{final.get('pointsTeam1')}–{final.get('pointsTeam2')}" if m.get('matchIsFinished') and final and all(type(final.get(p)) is int and final[p]>=0 for p in ('pointsTeam1','pointsTeam2')) else None
   local=ts.astimezone(__import__('zoneinfo').ZoneInfo('Europe/London')).strftime('%d %b %H:%M')
-  old=prior_matches.get((local,home,away),{})
-  # Keep independently verified results until the community source reports a final score.
-  if score:
-   score_source='OpenLigaDB'
-  elif old.get('score'):
-   score=old['score']
-   score_source=old.get('score_source','previously verified cache')
-  else:
-   score_source=None
+  score_source='OpenLigaDB' if score else None
   item={'kickoff_utc':ts.isoformat(),'kickoff_uk':local,'home':home,'away':away,'score':score,'status':'Finished' if score else 'Scheduled / in progress'}
   if score_source:item['score_source']=score_source
   rows.append((ts,item))
  rows.sort(key=lambda x:x[0])
  output={'updated_utc':now.strftime('%Y-%m-%d %H:%M'),'source':'OpenLigaDB','license':'ODbL-1.0','competition':'Premier League','matches':[m for _,m in rows]}
- if any(m.get('score_source') not in (None,'OpenLigaDB') for _,m in rows):
-  for field in ('results_verified_date','results_verification_sources'):
-   if field in previous:output[field]=previous[field]
  # Surface upstream gaps in GitHub Actions instead of silently treating them as current results.
  missing=sum(1 for ts,m in rows if ts<now-datetime.timedelta(hours=6) and not m['score'])
  if missing:print(f'::warning::OpenLigaDB has {missing} past fixtures without confirmed final scores',file=sys.stderr)
