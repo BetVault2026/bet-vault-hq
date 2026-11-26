@@ -1,0 +1,102 @@
+{
+  "2026-11-21|Manchester City|Fulham FC": {
+    "goals": [
+      1,
+      1
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-21|AFC Bournemouth|Nottingham Forest": {
+    "goals": [
+      2,
+      0
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-21|Aston Villa|Sunderland": {
+    "goals": [
+      0,
+      0
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-21|Chelsea FC|Leeds United": {
+    "goals": [
+      1,
+      4
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-21|Coventry City|Crystal Palace FC": {
+    "goals": [
+      3,
+      2
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-21|Tottenham Hotspur FC|Ipswich Town": {
+    "goals": [
+      2,
+      0
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-21|Newcastle United FC|FC Arsenal": {
+    "goals": [
+      2,
+      2
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-22|Hull City|Brighton & Hove Albion": {
+    "goals": [
+      2,
+      0
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-22|FC Liverpool|Manchester United FC": {
+    "goals": [
+      4,
+      0
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  },
+  "2026-11-23|Brentford F.C.|Everton FC": {
+    "goals": [
+      4,
+      0
+    ],
+    "sources": [
+      "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/",
+      "https://www.theguardian.com/football/premierleague/results"
+    ]
+  }
+}
