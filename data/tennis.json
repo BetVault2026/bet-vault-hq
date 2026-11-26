@@ -3,7 +3,7 @@
   "coverage": "ATP and WTA singles; daily cached updates, not live scores",
   "usage": {
     "month": "2026-11",
-    "credits": 24
+    "credits": 28
   },
   "atp": {
     "upcoming": [],
@@ -12,7 +12,7 @@
       {
         "rank": 1,
         "previous_rank": 1,
-        "points": 9320,
+        "points": 10350,
         "player_id": "2375",
         "name": "Alexander Zverev",
         "country": "GER"
@@ -28,7 +28,7 @@
       {
         "rank": 3,
         "previous_rank": 3,
-        "points": 6100,
+        "points": 7600,
         "player_id": "3782",
         "name": "Carlos Alcaraz",
         "country": "ESP"
@@ -36,7 +36,7 @@
       {
         "rank": 4,
         "previous_rank": 4,
-        "points": 5170,
+        "points": 5570,
         "player_id": "9250",
         "name": "Ben Shelton",
         "country": "USA"
@@ -44,13 +44,21 @@
       {
         "rank": 5,
         "previous_rank": 5,
-        "points": 3820,
+        "points": 4220,
         "player_id": "2383",
         "name": "Daniil Medvedev",
         "country": "RUS"
       },
       {
         "rank": 6,
+        "previous_rank": 7,
+        "points": 3825,
+        "player_id": "10052",
+        "name": "Arthur Fils",
+        "country": "FRA"
+      },
+      {
+        "rank": 7,
         "previous_rank": 6,
         "points": 3680,
         "player_id": "7602",
@@ -58,24 +66,16 @@
         "country": "ITA"
       },
       {
-        "rank": 7,
-        "previous_rank": 7,
-        "points": 3625,
-        "player_id": "10052",
-        "name": "Arthur Fils",
-        "country": "FRA"
-      },
-      {
         "rank": 8,
         "previous_rank": 8,
-        "points": 3390,
+        "points": 3590,
         "player_id": "2708",
         "name": "Frances Tiafoe",
         "country": "USA"
       },
       {
         "rank": 9,
-        "previous_rank": 10,
+        "previous_rank": 9,
         "points": 3300,
         "player_id": "2946",
         "name": "Taylor Fritz",
@@ -83,7 +83,7 @@
       },
       {
         "rank": 10,
-        "previous_rank": 11,
+        "previous_rank": 10,
         "points": 3234,
         "player_id": "12657",
         "name": "Rafael Jodar",
@@ -91,7 +91,7 @@
       },
       {
         "rank": 11,
-        "previous_rank": 9,
+        "previous_rank": 11,
         "points": 3170,
         "player_id": "2651",
         "name": "Alex de Minaur",
@@ -115,7 +115,7 @@
       },
       {
         "rank": 14,
-        "previous_rank": 15,
+        "previous_rank": 14,
         "points": 2540,
         "player_id": "3754",
         "name": "Jiri Lehecka",
@@ -123,7 +123,7 @@
       },
       {
         "rank": 15,
-        "previous_rank": 16,
+        "previous_rank": 15,
         "points": 2500,
         "player_id": "10319",
         "name": "Jakub Mensik",
@@ -131,7 +131,7 @@
       },
       {
         "rank": 16,
-        "previous_rank": 17,
+        "previous_rank": 16,
         "points": 2500,
         "player_id": "3212",
         "name": "Alejandro Davidovich Fokina",
@@ -139,7 +139,7 @@
       },
       {
         "rank": 17,
-        "previous_rank": 14,
+        "previous_rank": 17,
         "points": 2465,
         "player_id": "3209",
         "name": "Felix Auger-Aliassime",
@@ -630,7 +630,8 @@
       }
     ],
     "live_fixture_day": "2026-11-26",
-    "live_fixture_updated_utc": "2026-11-26T05:34:48.586075+00:00"
+    "live_fixture_updated_utc": "2026-11-26T05:45:52.615049+00:00",
+    "rankings_updated_utc": "2026-11-26T05:45:51.885302+00:00"
   },
   "wta": {
     "upcoming": [
@@ -1179,7 +1180,7 @@
       },
       {
         "rank": 2,
-        "previous_rank": 3,
+        "previous_rank": 2,
         "points": 7806,
         "player_id": "9820",
         "name": "Mirra Andreeva",
@@ -1187,7 +1188,7 @@
       },
       {
         "rank": 3,
-        "previous_rank": 2,
+        "previous_rank": 3,
         "points": 6685,
         "player_id": "3038",
         "name": "Aryna Sabalenka",
@@ -1219,7 +1220,7 @@
       },
       {
         "rank": 7,
-        "previous_rank": 8,
+        "previous_rank": 7,
         "points": 4743,
         "player_id": "6970",
         "name": "Linda Noskova",
@@ -1227,7 +1228,7 @@
       },
       {
         "rank": 8,
-        "previous_rank": 7,
+        "previous_rank": 8,
         "points": 4665,
         "player_id": "3039",
         "name": "Karolina Muchova",
@@ -1260,7 +1261,7 @@
       {
         "rank": 12,
         "previous_rank": 12,
-        "points": 3016,
+        "points": 3004,
         "player_id": "3417",
         "name": "Maja Chwalinska",
         "country": "POL"
@@ -1331,8 +1332,18 @@
       }
     ],
     "updated_utc": "2026-11-26T02:24:03.682696+00:00",
-    "last_result_date": "2026-11-25"
+    "last_result_date": "2026-11-25",
+    "rankings_updated_utc": "2026-11-26T05:45:51.885302+00:00",
+    "live_upcoming": [],
+    "live_fixture_updated_utc": "2026-11-26T05:45:52.615049+00:00"
   },
   "updated_utc": "2026-11-26T02:24:03.682696+00:00",
-  "last_refresh_day": "2026-11-26"
+  "last_refresh_day": "2026-11-26",
+  "ranking_attempt_week": "2026-48",
+  "live_budget": {
+    "day": "2026-11-26",
+    "daily_reserved": 9,
+    "month": "2026-11",
+    "history_reserved": 3
+  }
 }
