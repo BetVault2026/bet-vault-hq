@@ -21,6 +21,14 @@ jobs:
           python-version: '3.12'
       - run: python -m py_compile update_tennis.py update_mens_fixtures.py
       - run: python -m json.tool data/tennis.json > /dev/null
+      - name: Test men's fixtures without publishing
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          LIVE_TENNIS_API_KEY: ${{ secrets.LIVE_TENNIS_API_KEY }}
+        run: python update_mens_fixtures.py
+      - name: Verify women's data unchanged
+        run: |
+          python -c 'import json, subprocess; a=json.loads(subprocess.check_output(["git","show","HEAD:data/tennis.json"])); b=json.load(open("data/tennis.json")); assert a["wta"] == b["wta"]; print("WTA unchanged; new mens fixtures:",len(b["atp"].get("live_upcoming",[])))'
   refresh:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
