@@ -13,6 +13,19 @@ req=urllib.request.Request(base+str(season),headers={'User-Agent':'BetVaultHQ/1.
 try:
  with urllib.request.urlopen(req,timeout=25) as res: raw=json.load(res)
  if not isinstance(raw,list) or not raw: raise ValueError('Unexpected feed format')
+ verified=json.loads(pathlib.Path('data/football-verified-results.json').read_text())
+ # Fill only missing provider finals using explicitly verified dated match records.
+ for m in raw:
+  dt=m.get('matchDateTimeUTC') or m.get('matchDateTime') or ''
+  h=(m.get('team1') or {}).get('teamName','')
+  a=(m.get('team2') or {}).get('teamName','')
+  v=verified.get(dt[:10]+'|'+h+'|'+a)
+  if not v: continue
+  final=next((x for x in (m.get('matchResults') or []) if str(x.get('resultTypeID'))=='2'),None)
+  if m.get('matchIsFinished') and final and all(type(final.get(k)) is int and final[k]>=0 for k in ('pointsTeam1','pointsTeam2')): continue
+  m['matchIsFinished']=True
+  m['matchResults']=[x for x in (m.get('matchResults') or []) if str(x.get('resultTypeID'))!='2']+[{'resultTypeID':2,'pointsTeam1':v['goals'][0],'pointsTeam2':v['goals'][1]}]
+  m['_verified_sources']=v['sources']
  # Preserve chronological order based on the original timestamps
  rows=[]
  for m in raw:
@@ -21,14 +34,15 @@ try:
   try:ts=datetime.datetime.fromisoformat(dt.replace('Z','+00:00'))
   except ValueError:continue
   if ts.tzinfo is None:ts=ts.replace(tzinfo=datetime.timezone.utc)
-  if not now-datetime.timedelta(days=7)<=ts<=now+datetime.timedelta(days=14):continue
+  if not now-datetime.timedelta(days=21)<=ts<=now+datetime.timedelta(days=14):continue
   home=(m.get('team1') or {}).get('teamName','TBC');away=(m.get('team2') or {}).get('teamName','TBC')
   results=m.get('matchResults') or [];final=next((x for x in results if str(x.get('resultTypeID'))=='2'),None)
   score=f"{final.get('pointsTeam1')}–{final.get('pointsTeam2')}" if m.get('matchIsFinished') and final and all(type(final.get(p)) is int and final[p]>=0 for p in ('pointsTeam1','pointsTeam2')) else None
   local=ts.astimezone(__import__('zoneinfo').ZoneInfo('Europe/London')).strftime('%d %b %H:%M')
   score_source='OpenLigaDB' if score else None
   item={'kickoff_utc':ts.isoformat(),'kickoff_uk':local,'home':home,'away':away,'score':score,'status':'Finished' if score else 'Scheduled / in progress'}
-  if score_source:item['score_source']=score_source
+  if score_source:item['score_source']='RTÉ Sport / The Guardian' if m.get('_verified_sources') else score_source
+  if m.get('_verified_sources'):item['score_sources']=m['_verified_sources']
   rows.append((ts,item))
  rows.sort(key=lambda x:x[0])
  output={'updated_utc':now.strftime('%Y-%m-%d %H:%M'),'source':'OpenLigaDB','license':'ODbL-1.0','competition':'Premier League','matches':[m for _,m in rows]}
