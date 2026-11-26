@@ -83,7 +83,9 @@ for label in ("atp", "wta"):
 rankings_due = today.weekday() == 0 or any(
     not previous.get(tour, {}).get("rankings") for tour in ("atp", "wta")
 )
-planned_calls = 2 + sum(len(days) for days in dates_by_tour.values()) + (2 if rankings_due else 0)
+# Recover recent ATP Finals results once if the cache is empty.
+atp_backfill = not previous.get("atp", {}).get("results") and not previous.get("atp", {}).get("historical_backfill_month") == month
+planned_calls = (7 if atp_backfill else 0) + 2 + sum(len(days) for days in dates_by_tour.values()) + (2 if rankings_due else 0)
 if spent + planned_calls * 2 > limit:
     print("Monthly tennis safety cap reached; previous data retained. "
           f"Tracked credits: {spent}/{limit}.")
@@ -123,8 +125,21 @@ try:
                 if isinstance(match, dict) and match.get("match_id") and is_final(match):
                     confirmed[str(match["match_id"])] = match
 
+        if label == "atp" and atp_backfill:
+            for offset in range(4, 11):
+                day = (today - timedelta(days=offset)).isoformat()
+                if day in dates_by_tour[label]:
+                    continue
+                historical = call("get_matches", {"league": league, "date": day, "status": "final", "limit": 100})
+                if not isinstance(historical.get("matches"), list):
+                    raise ValueError("Missing ATP historical matches on " + day)
+                for match in historical["matches"]:
+                    if isinstance(match, dict) and match.get("match_id") and is_final(match):
+                        confirmed[str(match["match_id"])] = match
+            bucket["historical_backfill_month"] = month
+
         # Never publish old scheduled matches as results, or past fixtures as upcoming.
-        cutoff = now - timedelta(days=21)
+        cutoff = now - timedelta(days=30 if label == 'atp' else 21)
         bucket["results"] = sorted(
             (match for match in confirmed.values()
              if (when := start_time(match)) and cutoff <= when <= now),
