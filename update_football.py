@@ -21,7 +21,7 @@ try:
   try:ts=datetime.datetime.fromisoformat(dt.replace('Z','+00:00'))
   except ValueError:continue
   if ts.tzinfo is None:ts=ts.replace(tzinfo=datetime.timezone.utc)
-  if not now-datetime.timedelta(days=7)<=ts<=now+datetime.timedelta(days=14):continue
+  if not now-datetime.timedelta(days=21)<=ts<=now+datetime.timedelta(days=14):continue
   home=(m.get('team1') or {}).get('teamName','TBC');away=(m.get('team2') or {}).get('teamName','TBC')
   results=m.get('matchResults') or [];final=next((x for x in results if str(x.get('resultTypeID'))=='2'),None)
   score=f"{final.get('pointsTeam1')}–{final.get('pointsTeam2')}" if m.get('matchIsFinished') and final and all(type(final.get(p)) is int and final[p]>=0 for p in ('pointsTeam1','pointsTeam2')) else None
