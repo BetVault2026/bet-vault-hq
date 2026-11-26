@@ -1,21 +1,36 @@
 name: Refresh tennis data
 on:
   schedule:
-    - cron: '15 11 * * 5'
+    - cron: '20 11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: tennis-refresh
+  group: tennis-cache-${{ github.ref }}
   cancel-in-progress: false
 jobs:
+  validate-draft:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile update_tennis.py
+      - run: python -m json.tool data/tennis.json > /dev/null
   refresh:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check Python updater syntax
+        run: python -m py_compile update_tennis.py
       - name: Refresh ATP and WTA
         env:
           ACES_API_KEY: ${{ secrets.ACES_API_KEY }}
@@ -26,4 +41,13 @@ jobs:
           git config user.name "bet-vault-hq-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/tennis.json
-          git diff --cached --quiet || (git commit -m "Refresh tennis data" && git pull --rebase origin main && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh tennis data"
+            for attempt in 1 2 3 4; do
+              git pull --rebase origin "$GITHUB_REF_NAME"
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+              sleep $((attempt * 2))
+            done
+            echo "Failed to push updated tennis cache after retries" >&2
+            exit 1
+          fi

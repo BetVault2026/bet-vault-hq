@@ -4,6 +4,11 @@ import datetime,json,urllib.request,pathlib,sys
 base='https://api.openligadb.de/getmatchdata/pl/'
 now=datetime.datetime.now(datetime.timezone.utc)
 season=now.year if now.month>=7 else now.year-1
+target=pathlib.Path('data/football.json')
+previous={}
+if target.exists():
+ try: previous=json.loads(target.read_text())
+ except (ValueError,OSError): previous={}
 req=urllib.request.Request(base+str(season),headers={'User-Agent':'BetVaultHQ/1.0 (static sports information project; see site contact page)','Accept':'application/json'})
 try:
  with urllib.request.urlopen(req,timeout=25) as res: raw=json.load(res)
@@ -18,12 +23,18 @@ try:
   if ts.tzinfo is None:ts=ts.replace(tzinfo=datetime.timezone.utc)
   if not now-datetime.timedelta(days=7)<=ts<=now+datetime.timedelta(days=14):continue
   home=(m.get('team1') or {}).get('teamName','TBC');away=(m.get('team2') or {}).get('teamName','TBC')
-  results=m.get('matchResults') or [];final=next((x for x in results if x.get('resultTypeID')==2),None)
+  results=m.get('matchResults') or [];final=next((x for x in results if str(x.get('resultTypeID'))=='2'),None)
   score=f"{final.get('pointsTeam1')}–{final.get('pointsTeam2')}" if m.get('matchIsFinished') and final and all(type(final.get(p)) is int and final[p]>=0 for p in ('pointsTeam1','pointsTeam2')) else None
   local=ts.astimezone(__import__('zoneinfo').ZoneInfo('Europe/London')).strftime('%d %b %H:%M')
-  rows.append((ts,{'kickoff_utc':ts.isoformat(),'kickoff_uk':local,'home':home,'away':away,'score':score,'status':'Finished' if m.get('matchIsFinished') else 'Scheduled / in progress'}))
+  score_source='OpenLigaDB' if score else None
+  item={'kickoff_utc':ts.isoformat(),'kickoff_uk':local,'home':home,'away':away,'score':score,'status':'Finished' if score else 'Scheduled / in progress'}
+  if score_source:item['score_source']=score_source
+  rows.append((ts,item))
  rows.sort(key=lambda x:x[0])
  output={'updated_utc':now.strftime('%Y-%m-%d %H:%M'),'source':'OpenLigaDB','license':'ODbL-1.0','competition':'Premier League','matches':[m for _,m in rows]}
+ # Surface upstream gaps in GitHub Actions instead of silently treating them as current results.
+ missing=sum(1 for ts,m in rows if ts<now-datetime.timedelta(hours=6) and not m['score'])
+ if missing:print(f'::warning::OpenLigaDB has {missing} past fixtures without confirmed final scores',file=sys.stderr)
  # Calculate standings from confirmed full-season results, not the fixture window.
  table={}; completed=[]
  for m in raw:
@@ -31,7 +42,7 @@ try:
   if not h or not a: continue
   for name in (h,a): table.setdefault(name,dict(team=name,played=0,won=0,drawn=0,lost=0,gf=0,ga=0,points=0,form=[]))
   if not m.get('matchIsFinished'): continue
-  f=next((r for r in m.get('matchResults',[]) if r.get('resultTypeID')==2),None)
+  f=next((r for r in m.get('matchResults',[]) if str(r.get('resultTypeID'))=='2'),None)
   if not f or not isinstance(f.get('pointsTeam1'),int) or not isinstance(f.get('pointsTeam2'),int): continue
   completed.append((m.get('matchDateTimeUTC') or m.get('matchDateTime') or '',h,a,f['pointsTeam1'],f['pointsTeam2']))
  for _,h,a,g1,g2 in sorted(completed):
