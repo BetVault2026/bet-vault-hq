@@ -8,90 +8,80 @@
       "kickoff_uk": "21 Nov 12:30",
       "home": "Manchester City",
       "away": "Fulham FC",
-      "score": "1–1",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T12:30:00.000Z"
     },
     {
       "kickoff_uk": "21 Nov 15:00",
       "home": "AFC Bournemouth",
       "away": "Nottingham Forest",
-      "score": "2–0",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T15:00:00.000Z"
     },
     {
       "kickoff_uk": "21 Nov 15:00",
       "home": "Aston Villa",
       "away": "Sunderland",
-      "score": "0–0",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T15:00:00.000Z"
     },
     {
       "kickoff_uk": "21 Nov 15:00",
       "home": "Chelsea FC",
       "away": "Leeds United",
-      "score": "1–4",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T15:00:00.000Z"
     },
     {
       "kickoff_uk": "21 Nov 15:00",
       "home": "Coventry City",
       "away": "Crystal Palace FC",
-      "score": "3–2",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T15:00:00.000Z"
     },
     {
       "kickoff_uk": "21 Nov 15:00",
       "home": "Tottenham Hotspur FC",
       "away": "Ipswich Town",
-      "score": "2–0",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T15:00:00.000Z"
     },
     {
       "kickoff_uk": "21 Nov 17:30",
       "home": "Newcastle United FC",
       "away": "FC Arsenal",
-      "score": "2–2",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-21T17:30:00.000Z"
     },
     {
       "kickoff_uk": "22 Nov 14:00",
       "home": "Hull City",
       "away": "Brighton & Hove Albion",
-      "score": "2–0",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-22T14:00:00.000Z"
     },
     {
       "kickoff_uk": "22 Nov 16:30",
       "home": "FC Liverpool",
       "away": "Manchester United FC",
-      "score": "4–0",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-22T16:30:00.000Z"
     },
     {
       "kickoff_uk": "23 Nov 20:00",
       "home": "Brentford F.C.",
       "away": "Everton FC",
-      "score": "4–0",
-      "status": "Finished",
-      "score_source": "Public results cross-checked 2026-11-25",
+      "score": null,
+      "status": "Scheduled / in progress",
       "kickoff_utc": "2026-11-23T20:00:00.000Z"
     },
     {
@@ -304,10 +294,5 @@
       "score": null,
       "status": "Scheduled / in progress"
     }
-  ],
-  "results_verified_date": "2026-11-25",
-  "results_verification_sources": [
-    "https://www.cbssports.com/soccer/premier-league/schedule/20261121/",
-    "https://www.rte.ie/sport/results/soccer/premier-league/36781/results/"
   ]
 }
