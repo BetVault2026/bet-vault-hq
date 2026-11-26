@@ -112,7 +112,7 @@ try:
             if is_final(match) and match.get("match_id"):
                 confirmed[str(match["match_id"])] = match
             elif (str(match.get("status") or "").lower() in {"scheduled", "upcoming"}
-                  and when and when >= now):
+                  and when and (when >= now or (not match.get('starts_at') and when.date() >= today))):
                 upcoming.append(match)
 
         for day in dates_by_tour[label]:
