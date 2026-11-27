@@ -1,26 +1,8 @@
 {
-  "updated_utc": "2026-11-25T07:50:56.574899+00:00",
+  "updated_utc": "2026-11-27T07:48:52.712482+00:00",
   "source": "https://openboxing.org/api",
   "coverage": "World-title boxing only",
   "upcoming": [
-    {
-      "date": "2026-11-26",
-      "boxer_a": "Masamichi Yabuki",
-      "boxer_b": "Miel Fajardo",
-      "status": "SCHEDULED",
-      "winner": null,
-      "method": null,
-      "weight": "Flyweight"
-    },
-    {
-      "date": "2026-11-26",
-      "boxer_a": "Takeshi Ishii",
-      "boxer_b": "Zyvyr Medecilo",
-      "status": "SCHEDULED",
-      "winner": null,
-      "method": null,
-      "weight": "Minimumweight"
-    },
     {
       "date": "2026-11-28",
       "boxer_a": "Agit Kabayel",
