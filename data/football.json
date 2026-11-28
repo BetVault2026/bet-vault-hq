@@ -1,18 +1,9 @@
 {
-  "updated_utc": "2026-11-26 07:12",
+  "updated_utc": "2026-11-28 01:06",
   "source": "OpenLigaDB",
   "license": "ODbL-1.0",
   "competition": "Premier League",
   "matches": [
-    {
-      "kickoff_utc": "2026-11-06T20:00:00+00:00",
-      "kickoff_uk": "06 Nov 20:00",
-      "home": "Everton FC",
-      "away": "Coventry City",
-      "score": "3–1",
-      "status": "Finished",
-      "score_source": "OpenLigaDB"
-    },
     {
       "kickoff_utc": "2026-11-07T12:30:00+00:00",
       "kickoff_uk": "07 Nov 12:30",
